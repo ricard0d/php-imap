@@ -11,12 +11,12 @@
 *  This file attempts to correct this by using a list of aliases and their mappings to supported iconv() encodings
 */
 
-namespace Webklex\PHPIMAP;
+namespace ricard0d\PHPIMAP;
 
 /**
  * Class EncodingAliases
  *
- * @package Webklex\PHPIMAP
+ * @package ricard0d\PHPIMAP
  */
 class EncodingAliases {
    

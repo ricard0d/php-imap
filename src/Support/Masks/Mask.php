@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support\Masks;
+namespace ricard0d\PHPIMAP\Support\Masks;
 
 use Illuminate\Support\Str;
-use Webklex\PHPIMAP\Exceptions\MethodNotFoundException;
+use ricard0d\PHPIMAP\Exceptions\MethodNotFoundException;
 
 /**
  * Class Mask
  *
- * @package Webklex\PHPIMAP\Support\Masks
+ * @package ricard0d\PHPIMAP\Support\Masks
  */
 class Mask {
 

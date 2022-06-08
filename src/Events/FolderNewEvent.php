@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Events;
+namespace ricard0d\PHPIMAP\Events;
 
-use Webklex\PHPIMAP\Folder;
+use ricard0d\PHPIMAP\Folder;
 
 /**
  * Class FolderNewEvent
  *
- * @package Webklex\PHPIMAP\Events
+ * @package ricard0d\PHPIMAP\Events
  */
 class FolderNewEvent extends Event {
 

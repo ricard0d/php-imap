@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Exceptions;
+namespace ricard0d\PHPIMAP\Exceptions;
 
 use \Exception;
 
 /**
  * Class AuthFailedException
  *
- * @package Webklex\PHPIMAP\Exceptions
+ * @package ricard0d\PHPIMAP\Exceptions
  */
 class AuthFailedException extends Exception {
 

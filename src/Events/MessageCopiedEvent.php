@@ -10,12 +10,12 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Events;
+namespace ricard0d\PHPIMAP\Events;
 
 /**
  * Class MessageCopiedEvent
  *
- * @package Webklex\PHPIMAP\Events
+ * @package ricard0d\PHPIMAP\Events
  */
 class MessageCopiedEvent extends MessageMovedEvent {
 

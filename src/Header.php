@@ -10,17 +10,17 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace ricard0d\PHPIMAP;
 
 
 use Carbon\Carbon;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MethodNotFoundException;
+use ricard0d\PHPIMAP\Exceptions\InvalidMessageDateException;
+use ricard0d\PHPIMAP\Exceptions\MethodNotFoundException;
 
 /**
  * Class Header
  *
- * @package Webklex\PHPIMAP
+ * @package ricard0d\PHPIMAP
  */
 class Header {
 
@@ -714,7 +714,7 @@ class Header {
      * |                                            | mail server                       |
      * | Sat, 31 Aug 2013 20:08:23 +0580            | Invalid timezone                  | PHPMailer bug https://sourceforge.net/p/phpmailer/mailman/message/6132703/
      *
-     * Please report any new invalid timestamps to [#45](https://github.com/Webklex/php-imap/issues)
+     * Please report any new invalid timestamps to [#45](https://github.com/ricard0d/php-imap/issues)
      *
      * @param object $header
      *

@@ -11,7 +11,7 @@
 */
 
 use PHPUnit\Framework\TestCase;
-use \Webklex\PHPIMAP\ClientManager;
+use \ricard0d\PHPIMAP\ClientManager;
 
 class InitialTest extends TestCase {
     protected $cm;

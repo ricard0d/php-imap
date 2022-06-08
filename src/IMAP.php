@@ -10,7 +10,7 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace ricard0d\PHPIMAP;
 
 /**
  * Class IMAP
