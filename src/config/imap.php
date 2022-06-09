@@ -111,7 +111,7 @@ return [
     |       Default FALSE - Set to TRUE if you want to ignore certain exception while fetching bulk messages
     |   -RFC822
     |       Default TRUE - Set to FALSE to prevent the usage of \imap_rfc822_parse_headers().
-    |                      See https://github.com/Webklex/php-imap/issues/115 for more information.
+    |                      See https://github.com/ricard0d/php-imap/issues/115 for more information.
     |   -Debug enable to trace communication traffic
     |   -UID cache enable the UID cache
     |   -Fallback date is used if the given message date could not be parsed
@@ -143,8 +143,8 @@ return [
     */
     'options' => [
         'delimiter' => '/',
-        'fetch' => \Webklex\PHPIMAP\IMAP::FT_PEEK,
-        'sequence' => \Webklex\PHPIMAP\IMAP::ST_UID,
+        'fetch' => \ricard0d\PHPIMAP\IMAP::FT_PEEK,
+        'sequence' => \ricard0d\PHPIMAP\IMAP::ST_UID,
         'fetch_body' => true,
         'fetch_flags' => true,
         'soft_fail' => false,
@@ -189,20 +189,20 @@ return [
      */
     'events' => [
         "message" => [
-            'new' => \Webklex\PHPIMAP\Events\MessageNewEvent::class,
-            'moved' => \Webklex\PHPIMAP\Events\MessageMovedEvent::class,
-            'copied' => \Webklex\PHPIMAP\Events\MessageCopiedEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\MessageDeletedEvent::class,
-            'restored' => \Webklex\PHPIMAP\Events\MessageRestoredEvent::class,
+            'new' => \ricard0d\PHPIMAP\Events\MessageNewEvent::class,
+            'moved' => \ricard0d\PHPIMAP\Events\MessageMovedEvent::class,
+            'copied' => \ricard0d\PHPIMAP\Events\MessageCopiedEvent::class,
+            'deleted' => \ricard0d\PHPIMAP\Events\MessageDeletedEvent::class,
+            'restored' => \ricard0d\PHPIMAP\Events\MessageRestoredEvent::class,
         ],
         "folder" => [
-            'new' => \Webklex\PHPIMAP\Events\FolderNewEvent::class,
-            'moved' => \Webklex\PHPIMAP\Events\FolderMovedEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\FolderDeletedEvent::class,
+            'new' => \ricard0d\PHPIMAP\Events\FolderNewEvent::class,
+            'moved' => \ricard0d\PHPIMAP\Events\FolderMovedEvent::class,
+            'deleted' => \ricard0d\PHPIMAP\Events\FolderDeletedEvent::class,
         ],
         "flag" => [
-            'new' => \Webklex\PHPIMAP\Events\FlagNewEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\FlagDeletedEvent::class,
+            'new' => \ricard0d\PHPIMAP\Events\FlagNewEvent::class,
+            'deleted' => \ricard0d\PHPIMAP\Events\FlagDeletedEvent::class,
         ],
     ],
 
@@ -220,7 +220,7 @@ return [
     | The provided masks below are used as the default masks.
      */
     'masks' => [
-        'message' => \Webklex\PHPIMAP\Support\Masks\MessageMask::class,
-        'attachment' => \Webklex\PHPIMAP\Support\Masks\AttachmentMask::class
+        'message' => \ricard0d\PHPIMAP\Support\Masks\MessageMask::class,
+        'attachment' => \ricard0d\PHPIMAP\Support\Masks\AttachmentMask::class
     ]
 ];

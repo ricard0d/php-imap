@@ -1,20 +1,19 @@
 {
-    "name": "webklex/php-imap",
+    "name": "ricard0d/php-imap",
     "type": "library",
     "description": "PHP IMAP client",
     "keywords": [
-        "webklex",
         "imap",
         "pop3",
         "php-imap",
         "mail"
     ],
-    "homepage": "https://github.com/webklex/php-imap",
+    "homepage": "https://github.com/ricard0d/php-imap",
     "license": "MIT",
     "authors": [
         {
             "name": "Malte Goldenbaum",
-            "email": "github@webklex.com",
+            "email": "github@ricard0d.com",
             "role": "Developer"
         }
     ],
@@ -34,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Webklex\\PHPIMAP\\": "src"
+            "ricard0d\\PHPIMAP\\": "src"
         }
     },
     "autoload-dev": {

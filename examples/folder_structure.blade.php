@@ -11,8 +11,8 @@
  */
 
 /**
- * @var \Webklex\PHPIMAP\Support\FolderCollection $paginator
- * @var \Webklex\PHPIMAP\Folder $folder
+ * @var \ricard0d\PHPIMAP\Support\FolderCollection $paginator
+ * @var \ricard0d\PHPIMAP\Folder $folder
  */
 
 ?>

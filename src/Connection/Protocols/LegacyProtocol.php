@@ -10,18 +10,18 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace ricard0d\PHPIMAP\Connection\Protocols;
 
-use Webklex\PHPIMAP\ClientManager;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\MethodNotSupportedException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\IMAP;
+use ricard0d\PHPIMAP\ClientManager;
+use ricard0d\PHPIMAP\Exceptions\AuthFailedException;
+use ricard0d\PHPIMAP\Exceptions\MethodNotSupportedException;
+use ricard0d\PHPIMAP\Exceptions\RuntimeException;
+use ricard0d\PHPIMAP\IMAP;
 
 /**
  * Class LegacyProtocol
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package ricard0d\PHPIMAP\Connection\Protocols
  */
 class LegacyProtocol extends Protocol {
 

@@ -10,19 +10,19 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace ricard0d\PHPIMAP;
 
 use Carbon\Carbon;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\NotSupportedCapabilityException;
-use Webklex\PHPIMAP\Query\WhereQuery;
-use Webklex\PHPIMAP\Support\FolderCollection;
-use Webklex\PHPIMAP\Traits\HasEvents;
+use ricard0d\PHPIMAP\Exceptions\ConnectionFailedException;
+use ricard0d\PHPIMAP\Exceptions\NotSupportedCapabilityException;
+use ricard0d\PHPIMAP\Query\WhereQuery;
+use ricard0d\PHPIMAP\Support\FolderCollection;
+use ricard0d\PHPIMAP\Traits\HasEvents;
 
 /**
  * Class Folder
  *
- * @package Webklex\PHPIMAP
+ * @package ricard0d\PHPIMAP
  */
 class Folder {
     use HasEvents;

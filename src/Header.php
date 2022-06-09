@@ -10,17 +10,17 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace ricard0d\PHPIMAP;
 
 
 use Carbon\Carbon;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MethodNotFoundException;
+use ricard0d\PHPIMAP\Exceptions\InvalidMessageDateException;
+use ricard0d\PHPIMAP\Exceptions\MethodNotFoundException;
 
 /**
  * Class Header
  *
- * @package Webklex\PHPIMAP
+ * @package ricard0d\PHPIMAP
  */
 class Header {
 
@@ -216,6 +216,24 @@ class Header {
         $this->parseDate($header);
         foreach ($header as $key => $value) {
             $key = trim(rtrim(strtolower($key)));
+
+            if(($key == "content_type" && is_array($value)) || ($key == "content_disposition" && is_array($value))){
+                $str = "";
+                        foreach($value as $it){
+                            if(preg_match("/(?:\*\d\*=utf-8'')/", $it)){
+                                $val = explode("=",substr(preg_replace("/(?:\*\d\*=utf-8'')/",'=',$it),0,-1));
+                    $str .= $val[0]."=".urldecode($val[1]);
+                            }else{
+                                if(preg_match('/(?:\*\d\*=)/', $it)){
+                                    $str .= urldecode(explode("=", $it)[1]);
+                                }else{
+                                    $str .= $it;
+                                }
+                            }
+                        }
+                $value = $str;
+                    }
+
             if (!isset($this->attributes[$key])) {
                 $this->set($key, $value);
             }
@@ -696,7 +714,7 @@ class Header {
      * |                                            | mail server                       |
      * | Sat, 31 Aug 2013 20:08:23 +0580            | Invalid timezone                  | PHPMailer bug https://sourceforge.net/p/phpmailer/mailman/message/6132703/
      *
-     * Please report any new invalid timestamps to [#45](https://github.com/Webklex/php-imap/issues)
+     * Please report any new invalid timestamps to [#45](https://github.com/ricard0d/php-imap/issues)
      *
      * @param object $header
      *

@@ -10,12 +10,12 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support;
+namespace ricard0d\PHPIMAP\Support;
 
 /**
  * Class FolderCollection
  *
- * @package Webklex\PHPIMAP\Support
+ * @package ricard0d\PHPIMAP\Support
  */
 class FolderCollection extends PaginatedCollection {
 
